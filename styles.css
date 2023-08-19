@@ -1,0 +1,117 @@
+
+.nav {
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.nav-logo {
+  width: 250px;
+  height: auto;
+}
+
+body {
+  font-family: 'Roboto Slab', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.3));
+  background-size: cover;
+  background-position: center;
+}
+
+  .container {
+    color: white;
+    background-color: rgba(75,75,77);
+    padding: 20px;
+    border-radius: 0px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin-top: 20px;
+  }
+  .rating-container{
+    color: white;
+    background-color: rgba(75,75,77);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  .recommend-container{
+    color: white;
+    background-color: rgba(75,75,77);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  .thank-you-message{
+    color: white;
+    background-color: rgba(75,75,77);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  }
+  .feedbackform{
+    color: white;
+    background-color: rgba(75,75,77);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+  } 
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  form {
+    color: white;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    color: white;
+    margin-top: 10px;
+  }
+  
+  input, textarea {
+    color: black;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(85,101,138);
+    color: white;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(93, 111, 152);
+  }
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(107,107,107);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
