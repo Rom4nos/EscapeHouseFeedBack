@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Escape House Cleaning</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+  </style>
+</head>
+<header>
+    <div class="nav">
+        <img src="/img/EscapeHouseLogo.jpeg" alt="Logo" class="nav-logo">
+      </div>
+</header>
+<body>
+  <div class="container">
+    <h1>Give us a FeedBack!</h1>
+    <form id="feedback-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <button type="submit" id="start-button">Start</button>
+    </form>
+  </div>
+  <div class="rating-container" style="display: none;">
+    <h1>How Do You Rate Our Work?</h1>
+    <form id="rating-form">
+      <label>
+        <input type="radio" name="rating" value="excellent"> 😀 Excellent
+      </label>
+      <label>
+        <input type="radio" name="rating" value="good"> 😉 Good
+      </label>
+      <label>
+        <input type="radio" name="rating" value="regular"> 😐 Regular
+      </label>
+      <label>
+        <input type="radio" name="rating" value="bad"> 🙁 Bad
+      </label>
+      <button type="submit" id="rating-button">Submit Form</button>
+    </form>
+  </div>
+  
+  <div class="feedbackform" id="feedback-submit-form" style="display: none;">
+    <h1>What should we improve?</h1>
+    <form id="feedback-submit-form">
+      <div class="bad-reason-input" style="display: none;">
+        <label for="bad-reason">What should we improve?</label>
+        <textarea id="feedback-text-bad" name="feedback-text" rows="4" required></textarea>
+        <input type="text" id="bad-reason" name="bad-reason">
+      </div>
+      <label for="feedback-text">Feedback:</label>
+      <textarea id="feedback-text-good" name="feedback-text" rows="4" required></textarea>
+      <label for="feedback-photos">Upload Photos:</label>
+      <input type="file" id="feedback-photos" name="feedback-photos" accept="image/*" multiple>
+      <button type="button" id="feedback-submit">Submit Feedback</button>
+    </form>
+  </div>
+
+  <div class="recommend-container" style="display: none;">
+    <h1>Would You Recommend Us?</h1>
+    <form id="recommend-form">
+      <label>
+        <input type="radio" name="recommend" value="yes"> Yes
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="no"> No
+      </label>
+      <label>
+        <input type="radio" name="recommend" value="maybe"> Maybe
+      </label>
+      <button type="submit" id="recommend-button">Submit</button>
+    </form>
+  </div>
+
+  <div class="thank-you-message" style="display: none;">
+    <h1>Thank You for Your Feedback!</h1>
+    <p>We appreciate your opinion.</p>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-storage.js"></script> 
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-auth.js"></script>
+
+  
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAL2yrReu2YiWZ_86YHiDuI0m7nJB6Qklg",
+      authDomain: "escapehousecleaning-cef0f.firebaseapp.com",
+      databaseURL: "https://escapehousecleaning-cef0f-default-rtdb.firebaseio.com",
+      projectId: "escapehousecleaning-cef0f",
+      storageBucket: "escapehousecleaning-cef0f.appspot.com",
+      messagingSenderId: "749249414306",
+      appId: "1:749249414306:web:b117bd10f64b5517bfc3fb",
+      measurementId: "G-S4QMZJWP5E"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const storage = firebase.storage();
+    
+  </script> 
+
+  <script src="script.js"></script>
+</body>
+<footer>
+    <p>&copy; 2023 Escape House Cleaning. All rights reserved.</p>   
+</footer>
+</html>
