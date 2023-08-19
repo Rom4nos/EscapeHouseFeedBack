@@ -16,7 +16,6 @@
 }
 
 body {
-  touch-action: pan-y;
   font-family: 'Roboto Slab', sans-serif;
   margin: 0;
   padding: 0;
