@@ -45,9 +45,6 @@ body {
   .thank-you-message, .feedbackform {
     width: 100%; 
     border-radius: 0;
-  }
-  .container, .rating-container, .recommend-container,
-  .thank-you-message, .feedbackform {
     padding: 10px;
     margin-top: 10px;
   }
@@ -88,16 +85,18 @@ body {
     color: white;
     margin-top: 10px;
   }
+  input, textarea, select, button{
+    font-size: 16px; 
+    max-width: 100%; 
+    -webkit-text-size-adjust: 100%;
+  }
   
-  input, textarea {
+  input, textarea{
     color: black;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 16px; 
-    max-width: 100%; 
-    -webkit-text-size-adjust: 100%;
   }
 
   #feedback-photos {
