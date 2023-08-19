@@ -26,7 +26,7 @@ body {
   background-position: center;
 }
 
-  .container {
+  .container,.rating-container,.recommend-container,.thank-you-message,.feedbackform {
     color: white;
     background-color: rgba(75,75,77);
     padding: 20px;
@@ -35,38 +35,6 @@ body {
     width: 400px;
     margin-top: 20px;
   }
-  .rating-container{
-    color: white;
-    background-color: rgba(75,75,77);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-  }
-  .recommend-container{
-    color: white;
-    background-color: rgba(75,75,77);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-  }
-  .thank-you-message{
-    color: white;
-    background-color: rgba(75,75,77);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-  }
-  .feedbackform{
-    color: white;
-    background-color: rgba(75,75,77);
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-  } 
   h1 {
     color: white;
     text-align: center;
@@ -89,6 +57,18 @@ body {
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+  }
+
+  #feedback-photos {
+    display: block;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: rgb(105, 105, 110);
+    width: 100%;
+    box-sizing: border-box;
+    color: white;
   }
   
   button {
