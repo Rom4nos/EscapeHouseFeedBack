@@ -68,7 +68,9 @@ body {
 
   input, textarea {
     padding: 8px;
-    font-size: 0.9rem;
+    font-size: 16px; 
+    max-width: 100%; 
+    -webkit-text-size-adjust: 100%;
   }
 
   button {
@@ -93,12 +95,15 @@ body {
     margin-top: 10px;
   }
   
-  input, textarea {
+    input, textarea {
     color: black;
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-size: 16px; 
+    max-width: 100%; 
+    -webkit-text-size-adjust: 100%;
   }
 
   #feedback-photos {
